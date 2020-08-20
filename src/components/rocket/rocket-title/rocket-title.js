@@ -7,8 +7,7 @@ class RocketTitle extends Component {
   }
   render() {
     return <div class="d-flex justify-content-between">
-        <div> {this.props.title} </div>
-        <div> {this.props.status ? 'success' : 'failure'}</div>
+        <div> {this.props.title} ({this.props.status ? 'success' : 'failure'})</div>
         <Button onClick={() => this.props.reset()}>Reset</Button>
       </div>;
   }
